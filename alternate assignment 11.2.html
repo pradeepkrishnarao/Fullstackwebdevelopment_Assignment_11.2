@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Script loads an external javascript file "assignment 11.2.js" -->
+    <script type="text/javascript" src="assignment 11.2.js"></script>
+    <title>Document</title>    
+</head>
+<body>
+        <!-- table element has id "dynamic-table" and having border size 1-->
+        <table id="dynamic-table" border=1>
+        </table>
+        <br>
+        <!-- When Add row button is clicked myFunc() function is invoked and adds rows to the table -->
+        <input type="button" value="Add row" onclick="myFunc()">
+        <script>
+        var tab1=document.getElementById("dynamic-table"); //tab1 object has table html element with id name dynamic-table
+            tab1.addEventListener('click',function myFunc(){
+                //tab1.addEventListener executes 'click' and myFunc() function parameters
+            });
+        </script>   
+	
+</body>
+</html>
